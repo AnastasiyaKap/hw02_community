@@ -12,9 +12,9 @@
     <meta name="theme-color" content="#FFFFFF">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   </head>
-  <title>
-    {{ title }}
-  </title>       
+{% block title %}
+  {{ title }}
+{% endblock %}        
  <header>
     {% include 'includes/header.html' %}
  </header>
