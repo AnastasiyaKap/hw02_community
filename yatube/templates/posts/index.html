@@ -4,8 +4,10 @@
 {% endblock %}  
 {% block content %}
 <div class="container">
-  <div class="container py-5">     
+  <div class="container py-5">
+    {% for post in posts %}     
     {% include 'includes/description.html' %}
+    {% endfor %}  
   </div> 
 </div> 
 {% endblock content %}

@@ -9,7 +9,9 @@
     Группа тайных поклонников графа.
   </p>
   <article>
-    {% include 'includes/text_post.html' %}     
+    {% for post in posts %}
+    {% include 'includes/text_post.html' %}    
+    {% endfor %} 
   </article>
   <!-- под последним постом нет линии -->
 </div>  
