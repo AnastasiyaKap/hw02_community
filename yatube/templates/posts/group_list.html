@@ -9,20 +9,7 @@
     Группа тайных поклонников графа.
   </p>
   <article>
-    {% for post in posts %}
-    <ul>
-      <li>
-        Автор: {{ post.author.get_full_name }}
-      </li>
-      <li>
-        Дата публикации: {{ post.pub_date|date:"d E Y" }}
-      </li>
-    </ul>      
-    <p>
-      {{ post.text }}
-    </p>  
-    {% if not forloop.last %}<hr>{% endif %}
-    {% endfor %}     
+    {% include 'includes/text_post.html' %}     
   </article>
   <!-- под последним постом нет линии -->
 </div>  
